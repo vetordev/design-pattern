@@ -1,5 +1,5 @@
 /**
- * Estratégias comuns de implementação
+ * Implementações de um comportamento comum
  */
 
 abstract class Context<T extends Strategy> {
@@ -23,14 +23,14 @@ abstract class Strategy {
 }
 
 
-class ClientContext extends Context<ClientStrategy> {
+class ClientContext extends Context<ConcreteClientStrategy> {
 
     contextInterface() {
         super.contextInterface();
     }
 }
 
-class ClientStrategy extends Strategy {
+class ConcreteClientStrategy extends Strategy {
 
     algorithInterface() {
         console.log('Small interface algorith...')
@@ -38,8 +38,8 @@ class ClientStrategy extends Strategy {
 }
 
 /**
- * Permite a um contexto (cliente) aproveitar de diferentes estratégias de
- * uma implementação comum (formatar texto, enviar mensagem etc)
+ * Permite a um contexto (cliente) aproveitar de diferentes implementações
+ * de um comportamento comum (formatar texto, enviar mensagem etc)
  * 
  * Com composição de objetos, é possível alterar a estratégia de um contexto em tempo de 
  * execução. Em alguns casos, um contexto pode implementar múltiplas estratégias
