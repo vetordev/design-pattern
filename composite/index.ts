@@ -48,3 +48,10 @@ abstract class Composite extends Component {
         return true;
     }
 }
+
+/**
+ * Um equipamento, e um conjunto dele, devem implementar uma mesma interface,
+ * permitindo ao cliente, por exemplo, tratar um 
+ * módulo de RAM, e os módulos totais da mesma maneira. Pra quem consome, ter um equipamento (que é uma peça)
+ * e um equipamento composto por peças (um componente e uma composição de componentes), seria a mesma coisa.
+ */
