@@ -80,10 +80,3 @@ function main() {
 }
 main()
 
-
-/**
- * Um equipamento e um conjunto dele, devem implementar uma mesma interface,
- * permitindo ao cliente, por exemplo, tratar um 
- * módulo de RAM, e os módulos totais da mesma maneira. Pra quem consome, ter uma PEÇA
- * e um conjunto de PEÇAS (um componente e uma composição de componentes), seria a mesma coisa.
- */
