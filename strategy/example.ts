@@ -42,4 +42,16 @@ function main() {
     textComposition.repair();
 }
 
-main()
+main();
+
+/**
+ * Context pode repassar quaisquer dados comuns para implementações Strategy,
+ * através de argumentos. Porém, Context pode acabar repassando dados desnecessários
+ * a Strategy
+ * Em contra partida, Context pode passar a si mesmo como argumento, o que exige uma interface 
+ * mais elaborada para seus dados, acoplando Context e Strategy fortemente, mas evitando que
+ * dados desnecessários sejam repassados a Strategy
+ * 
+ * Strategy aumentam o número de objetos de uma aplicação, mantê-los como membros sem estados
+ * pode ser uma alternativa viável para o sistema
+ */

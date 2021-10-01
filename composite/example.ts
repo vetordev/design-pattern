@@ -78,5 +78,5 @@ function main() {
 
     component.draw();
 }
-main()
+main();
 

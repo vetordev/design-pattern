@@ -32,7 +32,7 @@ class ClientContext extends Context<ConcreteClientStrategy> {
 
 class ConcreteClientStrategy extends Strategy {
 
-    algorithInterface() {
+    algorithInterface( ) {
         console.log('Small interface algorith...')
     }
 }
