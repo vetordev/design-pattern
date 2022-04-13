@@ -26,7 +26,7 @@ class TextComposition extends Composition<TextCompositorStrategy> {
     repair() {
         super.repair();
 
-        console.log('Break lines count -> ', this.breakCount)
+        console.log('Break lines count -> ', this.breakCount);
     }
 }
 

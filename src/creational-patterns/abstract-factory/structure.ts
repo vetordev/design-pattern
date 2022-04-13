@@ -1,6 +1,6 @@
 abstract class Factory {
   abstract createProduct(): Product;
-};
+}
 
 class ConcreteFooFactory extends Factory {
   createProduct(): FooProduct {
@@ -16,7 +16,7 @@ class ConcreteBazFactory extends Factory {
 
     return product;
   }
-};
+}
 
 abstract class Product {
   constructor(name: string) {
@@ -24,7 +24,7 @@ abstract class Product {
   }
 
   name: string;
-};
+}
 
 class FooProduct extends Product {
   constructor (name: string, foo: string) {

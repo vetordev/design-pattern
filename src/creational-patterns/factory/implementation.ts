@@ -45,12 +45,12 @@ class EnchantedWall implements Wall {
 
   width: number;
   height: number;
-  enchantment: string
+  enchantment: string;
 }
 
 class EnchantedDoor implements Door {
   constructor(color: string, enchantment: string) {
-    this.color = color
+    this.color = color;
     this.enchantment = enchantment;
   }
 

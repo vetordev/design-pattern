@@ -32,7 +32,7 @@ abstract class Wall {
   }
 
   width: number;
-  height: number
+  height: number;
 }
 
 abstract class Door {
@@ -49,7 +49,7 @@ class EnchantedWall extends Wall {
     this.enchantment = enchantment;
   }
 
-  enchantment: string
+  enchantment: string;
 }
 
 class EnchantedDoor extends Door {
@@ -58,7 +58,7 @@ class EnchantedDoor extends Door {
     this.enchantment = enchantment;
   }
 
-  enchantment: string
+  enchantment: string;
 }
 
 type EnchantedMaze = {
@@ -72,7 +72,7 @@ function createMaze(factory: MazeFactory) {
 
   return {
     door, wall
-  }
+  };
 }
 
 function main() {

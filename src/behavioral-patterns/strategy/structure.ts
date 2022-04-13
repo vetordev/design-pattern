@@ -4,7 +4,7 @@
 
 abstract class Context<T extends Strategy> {
 
-    protected readonly strategy: T
+    protected readonly strategy: T;
 
     constructor(strategy: T) {
         this.strategy = strategy;
@@ -33,7 +33,7 @@ class ClientContext extends Context<ConcreteClientStrategy> {
 class ConcreteClientStrategy extends Strategy {
 
     algorithInterface( ) {
-        console.log('Small interface algorith...')
+        console.log('Small interface algorith...');
     }
 }
 

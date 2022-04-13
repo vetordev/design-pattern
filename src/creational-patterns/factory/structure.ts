@@ -10,7 +10,7 @@ abstract class Creator {
     const product = this.createProduct();
     product.execute();
   }
-};
+}
 
 /**
  * Redefine o método fábrica para retornar uma instância apropriada de um product
@@ -27,7 +27,7 @@ class ConcreteCreator extends Creator {
  */
 interface Product {
   execute(): void;
-};
+}
 
 /**
  * Implementa a interface de Product
@@ -35,7 +35,7 @@ interface Product {
 class ConcreteProduct implements Product {
 
   execute() {
-    console.log('foo - bar')
+    console.log('foo - bar');
   }
 }
 
